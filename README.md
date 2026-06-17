@@ -15,7 +15,8 @@ This project documents the investigation and technical analysis of a suspicious 
 
 Upon inspecting the email body, several social engineering indicators were present. The attacker claims that the bank details have changed and requests a review of an attached document. They also justify the usage of an alternative mailbox due to "domain blocking" issues.
 
-![Email Body](./screenshots/01_phishing_email_body.jpg)
+![Email Body](<img width="1277" height="897" alt="Capture d&#39;écran 2026-06-17 124343" src="https://github.com/user-attachments/assets/e4c385fb-d38c-4639-bb45-f233ed122128" />
+)
 
 ---
 
