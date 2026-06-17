@@ -1,1 +1,18 @@
+# ==============================================================================
+# Threat Intelligence Report: United Scientific Impersonation Campaign
+# Target Threat / Malware Family: AgentTesla (Info-Stealer) / Loki
+# Date of Analysis: 2026-06-17
+# ==============================================================================
 
+# --- Network Indicators (Malicious Infrastructure) ---
+# Description: Source IP address mapping to the attacker's delivery infrastructure.
+71.19.248.52
+
+# --- Domain Indicators (Impersonation) ---
+# Description: Corporate domain targeted for email spoofing.
+united.com.sg
+
+# --- Host Indicators (Cryptographic File Hashes) ---
+# Description: SHA-256 hash of the malicious executable attachment payload.
+# File Name: united scientific equipent.exe
+9909753bfb0ac8ab165bab3555233d03b01a9274a92e7c022f87ccbe51ca415
