@@ -15,8 +15,7 @@ This project documents the investigation and technical analysis of a suspicious 
 
 Upon inspecting the email body, several social engineering indicators were present. The attacker claims that the bank details have changed and requests a review of an attached document. They also justify the usage of an alternative mailbox due to "domain blocking" issues.
 
-![Email Body](<img width="1277" height="897" alt="Capture d&#39;écran 2026-06-17 124343" src="https://github.com/user-attachments/assets/e4c385fb-d38c-4639-bb45-f233ed122128" />
-)
+![Email Body](./screenshots/01_phishing_email_body.jpg)
 
 ---
 
@@ -50,10 +49,11 @@ Using PowerShell, the SHA-256 cryptographic hash of the file was computed to saf
 ### 4. Threat Intelligence Lookup
 Pivoting the indicators on VirusTotal provided concrete confirmation regarding the nature of the attack:
 * **IP Reputation:** The source IP address `71.19.248.52` is historically tightly mapped to several malicious `.eml` objects.
-* **Malware Family:** 36 out of 63 engine vendors classified the binary payload as an active info-stealer belonging to the **AgentTesla** trojan family (`Trojan[stealer]:MSIL/AgentTesla`).
+* **Malware Family & Severity:** Initial detection flags show 36/63 engines flagging the file, while deep rescans show a critical **61/71 security vendors flagging this file as malicious**. It is widely classified under the **AgentTesla** trojan family (`Trojan[stealer]:MSIL/AgentTesla`) and linked with **Loki** behavior.
 
 ![VirusTotal IP Relations](./screenshots/06_virustotal_ip_relations.png)
 ![VirusTotal Detection Verdict](./screenshots/07_virustotal_malware_detection.png)
+![VirusTotal Deep Rescan Verdict](./screenshots/09_virustotal_full_malware_detection.png)
 ![VirusTotal Basic Properties](./screenshots/08_virustotal_file_details.png)
 
 ---
