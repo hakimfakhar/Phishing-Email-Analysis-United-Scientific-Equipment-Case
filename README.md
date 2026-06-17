@@ -1,11 +1,11 @@
 # Phishing & Malware Analysis Report: United Scientific Impersonation
 
-## 📝 Overview
+##  Overview
 This project documents the investigation and technical analysis of a suspicious Business Email Compromise (BEC) and phishing campaign targeting a company infrastructure. The analysis covers email header forensics, attachment extraction, and malware reputation assessment via threat intelligence platforms.
 
 ---
 
-## 🔍 Investigation Breakdown
+##  Investigation Breakdown
 
 ### 1. Initial Email Triage
 * **Subject:** `FW: Swift Payment Copy - Incorrect Bank Details provided`
@@ -58,7 +58,7 @@ Pivoting the indicators on VirusTotal provided concrete confirmation regarding t
 
 ---
 
-## 🛡️ Indicators of Compromise (IoCs)
+##  Indicators of Compromise (IoCs)
 An automation-ready list is maintained inside the [indicators_of_compromise.txt](./indicators_of_compromise.txt) file.
 
 | Type | Indicator | Description |
@@ -69,7 +69,7 @@ An automation-ready list is maintained inside the [indicators_of_compromise.txt]
 
 ---
 
-## 🎯 Conclusion & Remediation Plan
+##  Conclusion & Remediation Plan
 * **Verdict:** Malicious (Targeted Business Email Compromise + Spyware Campaign).
 * **Remediation Actions:**
   1. **Network Level:** Block the malicious IP `71.19.248.52` at the perimeter email gateway and enterprise firewalls.
